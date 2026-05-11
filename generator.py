@@ -3,9 +3,7 @@ import random
 
 random.seed(42)
 
-# =========================
-# 1) Seed item (BERITA)
-# =========================
+
 seed_item = {
   "article": "Kementerian Perdagangan menyatakan harga beras di sejumlah daerah mulai bergerak turun setelah pasokan dari sentra produksi meningkat dalam dua pekan terakhir. Dalam keterangan pers pada Kamis sore, pemerintah menilai stabilisasi pasokan dipengaruhi oleh masuknya panen dari beberapa wilayah, serta penguatan distribusi yang melibatkan pemerintah daerah dan BUMN pangan. Namun, pemerintah juga mengingatkan bahwa penurunan harga masih perlu dijaga karena permintaan cenderung meningkat menjelang bulan puasa.\n\nMenteri Perdagangan Zulkifli Hasan menjelaskan, pemantauan pasar dilakukan melalui koordinasi dengan dinas perdagangan di tingkat provinsi dan kabupaten/kota. Menurutnya, arus distribusi kini lebih lancar karena beberapa jalur logistik yang sebelumnya terkendala cuaca sudah kembali normal. Ia menambahkan, pemerintah meminta pedagang dan distributor menjaga ketersediaan stok agar tidak terjadi lonjakan harga mendadak.\n\nDi sisi lain, Bulog menyebutkan bahwa penyaluran beras stabilisasi pasokan dan harga (SPHP) masih terus dilakukan di pasar tradisional dan gerai yang ditunjuk pemerintah. Bulog juga menyampaikan bahwa persediaan cadangan pemerintah berada dalam kondisi aman, meskipun kebutuhan di beberapa daerah meningkat. Sejumlah pedagang di pasar tradisional mengatakan harga beras medium mulai turun Rp300 hingga Rp700 per kilogram dibanding pekan lalu, sementara beras premium relatif stabil.\n\nEkonom dari sebuah lembaga riset menilai tren penurunan harga beras dapat berlanjut jika pasokan tetap terjaga dan tidak ada gangguan distribusi. Meski begitu, ia mengingatkan adanya risiko spekulasi harga, terutama ketika informasi stok tidak merata di masyarakat. Pemerintah diminta memperkuat transparansi data stok dan mempercepat distribusi ke wilayah yang memiliki ketergantungan pasokan dari luar daerah.\n\nData pekan ini menunjukkan penurunan harga rata-rata di pasar tradisional sebesar 3 hingga 5 persen dibanding minggu sebelumnya. Pemerintah menyatakan akan memperketat pengawasan menjelang bulan puasa dan periode libur panjang, termasuk dengan inspeksi mendadak serta koordinasi lintas instansi untuk mencegah penimbunan. Jika terjadi kenaikan harga yang tidak wajar, pemerintah akan menambah pasokan operasi pasar dan memperluas titik distribusi.",
   "summarizer": "Kementerian Perdagangan menyebut harga beras di sejumlah daerah mulai menurun seiring meningkatnya pasokan dan membaiknya distribusi dalam dua pekan terakhir. Zulkifli Hasan mengatakan pemantauan bersama pemerintah daerah dilakukan untuk menjaga kelancaran logistik dan mencegah penahanan stok.\n\nBulog menyatakan penyaluran beras SPHP masih berjalan dan cadangan beras pemerintah dinilai aman, sementara pedagang mengaku harga beras medium turun Rp300–Rp700 per kilogram. Pemerintah diminta tetap waspada terhadap spekulasi dan penimbunan menjelang bulan puasa.",
@@ -13,9 +11,7 @@ seed_item = {
   "jenis_artikel": "berita"
 }
 
-# =========================
-# 2) Data template
-# =========================
+
 KOTA = ["Bandung", "Surabaya", "Medan", "Makassar", "Semarang", "Yogyakarta", "Balikpapan", "Denpasar", "Palembang"]
 
 # Nama orang saja (untuk cerita + berita)
@@ -246,9 +242,7 @@ def make_fakta(i: int):
         "jenis_artikel": "fakta"
     }
 
-# =========================
-# 4) Buat 100 data (34/33/33)
-# =========================
+
 target_counts = {"berita": 1000, "cerita": 1000, "fakta": 1000}
 
 items = [seed_item]  # seed sudah berita
